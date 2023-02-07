@@ -1,0 +1,222 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Montserrat&family=Open+Sans&display=swap');
+
+
+/* Default Settings */
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,p{
+    margin: 0;
+}
+body{
+    background-color: #000000;
+    color: #fff;
+}
+
+.container{
+    padding: 0 10%;
+    margin: 0 auto;
+}
+
+.title{
+    font-family:'Open Sans', sans-serif;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.small-fonts{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2.25rem;
+    color: #fff;
+}
+.subtitle{
+    font-family: 'Alegreya family', sans-serif;
+    color: #fff;
+}
+.btn{
+    background-color: #ff004f;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: .5rem;
+    transition: .5s;
+}
+.btn:hover{
+    background-color: #fff;
+    border: 1px solid #ff004f;
+    color: #000000;
+    border-radius: .5rem;
+}
+
+/* ----------------------------------------Navigation------------------------------------------------------- */
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+}
+
+.main-nav img{
+    width: 80px;
+    height: 40px;
+}
+
+.links ul{
+    display: flex;
+    list-style: none;
+}
+.links ul li{
+   margin-right: 30px;
+}
+.links ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    transition: .5s;
+    position: relative;
+ }
+ .links ul li a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    top: 110%;
+    left: -5px;
+    background-color: #ff004f;
+    transition: .5s;
+ }
+
+ .links ul li a:hover::after{
+    width: 100%;
+    color:#ff004f;
+ }
+
+ /* ------------------------------Heading---------------------------------- */
+ .heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+ }
+
+ .intro-text{
+    margin-top: 15%;
+    flex-basis: 50%;
+    margin-right: 50px;
+ }
+ .intro-text h1{
+    margin-bottom: 10%;
+    font-size: 3.5rem;
+ }
+ .intro-text p{
+    margin-bottom: 10%;
+    font-size: 1.5rem;
+    line-height: 3rem
+    
+ }
+ .intro-text .btn{
+    text-decoration: none;
+ }
+
+ .intro-text span{
+    color: #ff004f;
+ }
+ .heading .profile-pic{
+    display: flex;
+    flex-direction: column;
+ }
+ .profile-pic .my-pic{
+    background-image: url(/images/profile-pic.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-width: 30vw;
+    max-height: 70vh;
+    padding: 80% 0;
+    margin-top: 10%;
+    filter: drop-shadow(0 0 0.75rem rgb(122, 120, 120));
+ }
+ .links .fa-solid{
+    display: none;
+ }
+
+/* --------------------------------Media Query---------------------------- */
+
+@media only screen and (max-width:700px) {
+
+/* --------Nav Media Query--------------- */
+    .container{
+        padding: 2% 5%;
+        margin: 0 auto;
+    }    
+    
+    .links ul{
+        display: inline;
+        line-height: 3rem;
+    }
+    .links .fa-solid{
+        display: block;
+     }
+    .links ul{
+        background-color: #ff004f;
+        position: fixed;
+        width: 180px;
+        height: 100vh;
+        top: 0;
+        right: -200px;
+        padding: 30px 20px;
+        z-index: 1;
+        transition: right 0.5s;
+        
+    }
+    .fa-rectangle-xmark{
+        position: absolute;
+        top: 10px;
+        left: 25px;
+        cursor: pointer;
+    }
+/* --------Nav Media Query---------------- */
+
+    .profile-pic .my-pic{
+        display: none;
+    }
+    .heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .heading h1{
+        font-size: 2.5rem;
+    }
+    .heading p{
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
+    .intro-text .btn{
+        font-size: .75rem;
+        padding: 5px 10px;
+     }
+}
+
+
+@media only screen and (max-width:950px) {
+    .heading h1{
+        font-size: 2rem;
+    }
+    .heading p{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .intro-text .btn{
+        font-size: .75rem;
+        padding: 5px 10px;
+     }
+    
+
+}

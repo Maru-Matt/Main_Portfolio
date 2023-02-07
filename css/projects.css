@@ -1,0 +1,243 @@
+
+
+.project-panel{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.project-lists{
+    display: flex;
+    flex-direction: column;
+    
+    position: relative;
+    
+}
+.list img{
+    max-width: 25vw;
+    border-radius: .5rem;
+    
+}
+.description{
+    width: 100%;
+    height:0;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+  
+   
+    border-radius: .5rem;
+    transition: height 0.5s;
+}
+.description h3{
+    margin: 20px 0;
+    text-align: start;
+}
+.description a{
+   background-color: aliceblue;
+   color: #ff004f;
+   padding: 5px 10px;
+}
+
+.description .tools{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.description .tools i{
+    margin: 10px;
+}
+.description li{
+    line-height: 2rem;
+    font-size: 1rem;
+}
+.description p{
+    line-height: 1.5rem;
+    font-size: 1rem;
+    
+}
+.description a{
+    font-size: .75rem;
+    padding: 1px 2px;
+   
+ }
+
+.project-lists:hover .description{
+    height: 100%;
+}
+
+
+.projects .btn{
+    text-decoration: none;
+    width: fit-content;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* --------------------------------------------Media Query-------------------------------------------------------- */
+@media only screen and (max-width:1350px) {
+   
+    .project-panel{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+    .project-panel .project-lists{
+        max-width: 35vw;
+        align-self: center;
+        margin-bottom: 30px;
+    }
+    .list img{
+        max-width: 35vw;
+    }
+
+    .project-lists{
+        margin-left: 5px;
+    }
+    .projects h1{
+        font-size: 2rem;
+    }
+    .projects h3{
+        font-size: 1.25rem;
+        margin-bottom: 7%;
+    }
+   
+    .description a{
+       font-size: .5rem;
+       padding: 1px 2px;
+      
+    }
+    .description .tools{
+        margin: 2% 0;
+        font-size: 1.5rem;
+    }
+    .description{
+        line-height: .25rem;
+    }
+    .description li{
+        line-height: 1.75rem;
+        font-size: 1rem;
+    }
+    .description p{
+        line-height: 1.5rem;
+        font-size: 1rem;
+        margin-bottom: 5%;
+    }
+    .projects .see-more-btn a {
+        font-size: .75rem;
+        padding: 1px 15px;
+        align-self: center;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+@media only screen and (max-width:950px) {
+   
+    .project-panel{
+        display: flex;
+        flex-direction: column;
+    }
+    .projects h1{
+        font-size: 2.5rem;
+        margin-bottom: 5%;
+    }
+
+    .project-panel .project-lists{
+        max-width: 70vw;
+        align-self: center;
+        margin-bottom: 5%;
+    }
+    .list img{
+        max-width: 70vw;
+    }
+    .projects .see-more-btn a {
+        font-size: .75rem;
+        padding: 5px 15px;
+        align-self: center;
+       
+    }
+    .description{
+        padding: 0 5%;
+    }
+    .description h3{
+      font-size: 1.5rem;
+      margin-bottom: 10%;
+     }
+     .description li{
+        font-size: 1.25rem;
+        margin-bottom: 5%; 
+    }
+    .description p{
+       line-height: 1.75rem;
+       font-size: .75rem;
+       margin-bottom: 5%;
+    }
+    .description .tools{
+        margin: 10% 0;
+        font-size: 1.5rem;
+    }
+    .description a{
+        font-size: .75rem;
+        padding: 1px 2px;
+     }
+}
+
+
+@media only screen and (max-width:550px) {
+   
+    .project-panel{
+        display: flex;
+        flex-direction: column;
+    }
+    .projects h1{
+        font-size: 1.5rem;
+    }
+    .projects p,li,i{
+        font-size: .75rem;
+    }
+
+    .project-panel .project-lists{
+        max-width: 80vw;
+        align-self: center;
+        margin-bottom: 10px;
+    }
+    .list img{
+        max-width: 80vw;
+    }
+    .projects .see-more-btn a {
+        font-size: .75rem;
+        padding: 1px 5px;
+        align-self: center;
+        margin-bottom: 10px;
+    }
+    .description li{
+        line-height: 1.5rem;
+        font-size: 1rem;
+    }
+    .description p{
+        line-height: 1.5rem;
+        font-size: 1rem;
+    }
+    .description a{
+       
+       font-size: .75rem;
+       padding: .5px 2px;
+    }
+    .description .tools{
+        margin: 10px 0;
+        font-size: 1rem;
+    }
+   
+}

@@ -1,0 +1,119 @@
+.about{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.about-text{
+    flex-basis: 50%;
+}
+.about .photo{
+    width: 20vw;
+    height: 40vh;
+    background-image: url(/images/codePic.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    border-radius: .5rem;
+    flex-basis: 40%; 
+}
+.about h1{
+    margin-bottom: 40px;
+}
+.about p{
+    text-align: justify;
+    margin-bottom: 34px;
+    font-size: 1.25rem;
+}
+
+/* -----------------------------Education----------------------------------- */
+
+
+.tab-title{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    
+}
+
+
+.tab-title p{
+    margin-bottom: 20px;
+    margin-right: 60px;
+    text-decoration:none;
+    font-size: 1.5rem;
+    position: relative;
+    cursor: pointer;
+}
+.tab-title p.active-tab::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 100%;
+    left: -2px;
+    background-color: #ff004f;
+    transition: 0.5s;
+}
+
+.tab-title p:hover{
+    
+    color: #ff004f;
+    transition: 0.5s;
+}
+
+.active{
+    display: block;
+    transition: .5s;
+}
+
+.tab-content span{
+    color: #ff004f;
+    font-size: 1.25rem;
+   
+}
+.tab-content .small-fonts{
+    margin: 20px 0;
+   
+}
+.tab-content{
+    display: none;
+}
+
+.tab-content.active-content{
+    display: block;
+}
+
+/* ---------------------------------------------Media Query--------------------------------------------------- */
+
+@media only screen and (max-width:600px) {
+    .about .photo{
+        display: none;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .about-text h1{
+        font-size: 2.5rem;
+        
+    }
+    .about-text p{
+        font-size: 1rem;
+        padding: 0 10px;
+        background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+        border-radius: .25rem;
+    }
+}
+@media only screen and (max-width:800px) {
+    .about .photo{
+        display: none;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+}

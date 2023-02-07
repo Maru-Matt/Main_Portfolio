@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/projects.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Maru Portfolio</title>
+</head>
+<body>
+    <nav class="main-nav container" id="home">
+        <div>
+            <img src="/images/logo.png" alt="">
+        </div>
+        <div class="links">
+            <ul id="sideMenu">
+                <li><a href="/">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills-education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-rectangle-xmark" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openMenu()" ></i>
+        </div>
+    </nav>
+
+<!--------------------------------Heading Section------------------------------------->
+
+<section class="heading container">
+    <div class="intro-text">
+        <h1 class="title">I'm <span>Matiyas Maru</span>,</h1>
+        <p class="small-fonts" >This is my online portfolio to show case my work related to Web Development</p>
+        <a class="btn small-fonts" href="/images/resume/Matiyas maru resume.pdf" download>Download Resume</a>
+    </div>
+    <div class="profile-pic">
+        <div class="my-pic"></div>
+    </div>
+</section>
+
+<!--------------------------------About Section------------------------------------->
+
+<section class="about container" id="about">
+    <div class="photo"></div>
+    <div class="about-text">
+        <h1 class="title">About Me</h1>
+        <p class="small-fonts">A result-driven Computer Engineering graduate with essential knowledge 
+            of software design and development. Seeking to utilize a broad educational background with 
+            excellent analytical, technical, and programming skills can thrive as an entry-level software 
+            engineer.  
+        </p>
+
+    </div>
+</section>
+
+<!--------------------------------Skills and Education Section------------------------------------->
+
+<section class="skill-education container" id="skills-education">
+    <div class="tab-title">
+        <p class="title tab-links active-tab" onclick="myFunction('education')" href="">Education</p>
+        <p class="title tab-links" onclick="myFunction('skills')" href="">Skills</p>
+    </div>
+
+    <div class="tab-content active-content" id="education">
+        <ul class="education">
+            <li><span class="subtitle">Bachelor of Science</span></li>
+            <p class="small-fonts">George Mason University - Fairfax, VA  2019 – 2022<br>
+            Computer Science <br> GPA: 3.3 / 4.0</p>
+        </ul>
+        <ul class="annandale">
+            <li><span class="subtitle">Associate of Science</span></li>
+            <p class="small-fonts">NOVA Community College – Annandale, VA 2017 – 2019 <br>
+            Computer Science <br> GPA: 3.5 / 4.0</p>
+        </ul>
+    </div>
+    <div class="tab-content" id="skills">
+        <ul class="skills">
+            <li><span class="subtitle">Development Skills</span></li>
+            <p class="small-fonts">Front End Stack: HTML | CSS | JS | Bootstrap | JAVA | jQuery <br>Back End Stack: Python | Node.js | Express.js | AWS | Flask | MongoDB <br>
+            Version Control: Git/GitHub <br>
+            IDEs: VS Code, PyCharm, Eclipse</p>
+            <li><span class="subtitle">Soft Skills</span></li>
+            <p class="small-fonts">Self-starter <br> Problem-solving <br> Communication <br> Accountability <br> Time management</p>
+        </ul>
+    </div>
+</section>
+
+<!--------------------------------Project Section------------------------------------->
+
+<section class="projects container" id="projects">
+    <h1 class="title">Projects</h1>
+    <div class="project-panel">
+
+        <div class="project-lists">
+            <div class="list"> <img src="/images/weather.png" alt=""></div>
+            <div class="description">
+                <h3 class="subtitle">Weather Station Web app</h3>
+                <ul>
+                    <li class="small-fonts">A Web station app written in HTML, CSS, Java Script, and Bootstrap</li>
+                    <li class="small-fonts">Used OpenWeather API to fetch weather data</li>
+                    <li class="small-fonts">Server side: Node.js and backend/Database MongoDB</li><br>
+                    <p class="subtitle tools"><i class="fa-brands fa-js"></i>   <i class="fa-brands fa-html5"></i>   
+                    <i class="fa-brands fa-bootstrap"></i>   <i class="fa-solid fa-database"></i>   <i class="fa-solid fa-cloud-sun-rain"></i></p>
+                    <a class="btn small-fonts" href="https://weatherstationapp.onrender.com/">Visit page</a>
+                </ul>    
+            </div>
+        </div>
+
+        <div class="project-lists">
+            <div class="list"> <img src="/images/flight.png" alt=""></div>
+            <div class="description">
+                <h3 class="subtitle">Flight deal Tracker</h3>
+                <li class="small-fonts">Easy Cheap Flights Seeker Web App</li>
+                <li class="small-fonts">Finds local flight to main Airport destinations</li>
+                <li class="small-fonts">Server:-  Node.js, Backend:-  MongoDB</li>
+                <p class="small-fonts tools"><i class="fa-brands fa-js"></i><i class="fa-brands fa-html5"></i><i class="fa-solid fa-database"></i><i class="fa-solid fa-plane-circle-check"></i></p>
+                <a class="btn small-fonts" href="https://todo-list-app-ivnn.onrender.com">Visit page</a>
+            </div>
+        </div>
+        <div class="project-lists">
+            <div class="list"> <img src="/images/noteB.png" alt=""></div>
+            <div class="description">
+                <h3 class="subtitle">Todo List App</h3>
+                <p class="small-fonts">A home page is rendered where the user can see existing tasks and insert a new one.</p>
+                <li class="small-fonts">Dynamic Frontend, through EJS</li>
+                <li class="small-fonts">Backend built with Nodejs</li>
+                <li class="small-fonts">Database Used: MongoDB Atlas</li>
+                <p class="small-fonts tools"><i class="fa-brands fa-html5"></i>   <i class="fa-brands fa-js"></i><i class="fa-solid fa-database"></i><i class="fa-solid fa-notes-medical"></i></p> 
+                <a class="btn small-fonts" href="https://flightsearchapp.onrender.com">Visit page</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="see-more-btn"><a class="btn small-fonts" href="https://github.com/Maru-Matt">Show More</a></div>
+</section>
+
+<!--------------------------------Contact Section------------------------------------->
+
+<section id="contact" class="container">
+    <div class="contact-left">
+        <h1 class="title">Contact Me</h1>
+        <p class="small-fonts"><a href=""><i class="small-fonts fa-regular fa-paper-plane"></i></a>matiyasmaru@gmail.com</p>
+        <p class="small-fonts"><a ><i class="small-fonts fa-solid fa-mobile-screen-button"></i></a>571-332-5482</p>
+        <p class="small-fonts"><i class="fa-solid fa-location-dot"></i>Address: Falls Church, VA</p>
+        <div class="contact-links">
+            <a href="https://www.linkedin.com/in/matiyas-maru-1b6417191/"><i class="small-fonts fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Maru-Matt"><i class="small-fonts fa-brands fa-github"></i></a>
+        </div>
+        
+    </div>
+    <div class="contact-right">
+        <div class="form">
+            <form action="mailto:matiyasmaru@gmail.com" method="GET">
+                <input name="subject" type="text" placeholder="subject" required>
+                <textarea name="body" cols="30" rows="10" placeholder="your message" required></textarea>
+                <button type="submit" class="btn small-fonts">Send</button>
+               
+            </form>
+            
+        </div>
+       
+    </div>
+    
+</section>
+
+<!--------------------------------Footer Section------------------------------------->
+
+<div class="footer">
+    <p class="small-fonts">made by <span>matt_maru</span></p>
+</div>
+    <script src="/mian.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>
